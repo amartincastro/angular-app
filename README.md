@@ -1,4 +1,4 @@
-# <span style="font-family:Papyrus; font-size:4em;">AngularApp/span>
+# <span style="font-family:Papyrus; font-size:4em;">AngularApp</span>
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.3.6.
 
