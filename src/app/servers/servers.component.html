@@ -16,6 +16,15 @@ class="form-control"
 <ng-template #noServer>
     <p>No server was created!</p>
 </ng-template>
-
-
 <app-server *ngFor="let server of servers"></app-server>
+<hr>
+
+<!-- <button class="btn btn-primary" (click)="showSecret = !showSecret">Toggle Details</button> -->
+<button class="btn btn-primary" (click)="onToggleDetails()">Toggle Details</button>
+
+<p *ngIf="showSecret">Secret password = ServerServer</p>
+<div 
+*ngFor="let logItem of log"
+[ngStyle]="{backgroundColor: logItem >= 5 ? 'blue' : 'transparent'}"
+[ngClass]="{'white-text': logItem >= 5}"
+>{{ logItem }}</div>

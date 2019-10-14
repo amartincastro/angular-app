@@ -12,6 +12,13 @@ export class ServersComponent implements OnInit {
   serverName = 'test test';
   serverCreated = false;
   servers =['Testserver', 'Testserver 2'];
+  showSecret = false;
+  log = [];
+
+  onToggleDetails() {
+    this.showSecret = !this.showSecret;
+    this.log.push(this.log.length + 1);
+  }
 
   constructor() { 
     setTimeout(() => {
